@@ -10,8 +10,11 @@
   },
   "dependencies": {
     "@next/font": "13.1.1",
+    "contentful": "^9.2.15",
     "next": "13.1.1",
     "react": "18.2.0",
-    "react-dom": "18.2.0"
+    "react-dom": "18.2.0",
+    "sass": "^1.57.1",
+    "sass-loader": "^13.2.0"
   }
 }
