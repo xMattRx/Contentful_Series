@@ -1,0 +1,52 @@
+.Container {
+    border-radius: 6px;
+    background-repeat: no-repeat !important;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    @media (max-width: 426px) {
+        align-items: flex-start;
+        background-size: cover !important;
+        background-position: 0px 100% !important;
+        min-height: 416px;
+        padding-bottom: 51px;
+        position: relative;
+    }
+
+
+    .Shadow {
+        background: #9b9b9b;
+        opacity: 0.15;
+        border-radius: 6px;
+        height: 100%;
+        position: absolute;
+        top: 0px;
+        width: 100%;
+        z-index: 1;
+    }
+
+    .Category {
+        align-items: center;
+        background: #FFF;
+        border-radius: 19px;
+        color: #391400;
+        display: flex;
+        font-size: 16px;
+        font-weight: 400;
+        height: 38px;
+        margin-bottom: 23px;
+        margin-left: 28px;
+        width: max-content;
+        padding: 0px 16px;
+        z-index: 2;
+    }
+
+    .Title {
+        color: #FFF;
+        font-size: 40px;
+        font-weight: 800;
+        margin-left: 28px;
+        z-index: 2;
+    }
+
+}
