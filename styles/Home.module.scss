@@ -2,17 +2,28 @@
   align-items: center;
   display: grid;
   gap: 15px;
+  grid-template-columns: 1fr 1fr;
   justify-content: center;
-  padding: 176px 135px 80px 135px;
+  padding: 176px 100px 80px 100px;
 
+  #BreakingBad {
+    width: 100%;
+  }
 
+  @media screen and (max-width: 1024px) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 128px 40px 48px 40px;
+  }
 
   @media screen and (max-width: 769px) {
+    display: grid;
     grid-template-columns: 1fr 1fr;
     padding: 128px 40px 48px 40px;
   }
 
   @media screen and (max-width: 426px) {
+    display: grid;
     grid-template-columns: 1fr;
     padding: 128px 23px 48px 23px;
   }

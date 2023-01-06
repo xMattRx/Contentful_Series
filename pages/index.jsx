@@ -29,7 +29,7 @@ export default function Home(props) {
       {array ? <>
           {array.map((item, index) => {
             return (
-              <Card {...item.fields} key={index}/>
+              <Card id={`${item.fields.title.replace(/\s/g, '')}`} {...item.fields} key={index}/>
             )
           })}
       </> : <p>loading</p>
