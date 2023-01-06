@@ -1,12 +1,19 @@
 .home {
+  align-items: center;
+  display: grid;
+  gap: 15px;
+  justify-content: center;
   padding: 176px 135px 80px 135px;
 
-  @media (max-width: 426px) {
-    align-items: center;
-    display: grid;
+
+
+  @media screen and (max-width: 769px) {
+    grid-template-columns: 1fr 1fr;
+    padding: 128px 40px 48px 40px;
+  }
+
+  @media screen and (max-width: 426px) {
     grid-template-columns: 1fr;
-    justify-content: center;
-    gap: 32px;
     padding: 128px 23px 48px 23px;
   }
 }

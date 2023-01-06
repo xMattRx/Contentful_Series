@@ -15,7 +15,7 @@ export default function Card(props) {
 
   return (
     <Link href={`/serie/${props.title}`}>
-        <div style={width <= 426 ? {background: `url(${props.verticalImage})`} : {background: `url(${props.image})`} } className={styles[`Container`]}>
+        <div style={width <= 768 ? {background: `url(${props.verticalImage})`} : {background: `url(${props.image})`} } className={styles[`Container`]}>
                 <div className={styles[`Shadow`]}>
                 </div>
                 <div  className={styles[`Category`]}>

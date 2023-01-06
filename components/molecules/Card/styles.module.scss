@@ -1,16 +1,20 @@
 .Container {
+    align-items: flex-start;
     border-radius: 6px;
+    background-position: 0px 100% !important;
     background-repeat: no-repeat !important;
+    background-size: cover !important;
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
+    position: relative;
     @media (max-width: 426px) {
-        align-items: flex-start;
-        background-size: cover !important;
-        background-position: 0px 100% !important;
         min-height: 416px;
         padding-bottom: 51px;
-        position: relative;
+    }
+    @media (max-width: 769px) {
+        min-height: 416px;
+        padding-bottom: 51px;
     }
 
 
