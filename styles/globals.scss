@@ -18,6 +18,10 @@ body {
 
 }
 
+html.sr .load-hidden {
+  visibility: hidden;
+}
+
 body {
   background: var(--background);
 }
