@@ -1,11 +1,11 @@
 import React from 'react'
 import styles from './styles.module.scss'
 
-function Shadow() {
+function ShadowCard() {
   return (
     <div className={styles[`Shadow`]}>
     </div>
   )
 }
 
-export default Shadow
+export default ShadowCard

@@ -1,7 +1,7 @@
 import React from 'react'
 import styles from './styles.module.scss'
 
-function Category({type}) {
+function CategoryCard({type}) {
   return (
     <div  className={styles[`Category`]}>
       {type}
@@ -9,4 +9,4 @@ function Category({type}) {
   )
 }
 
-export default Category
+export default CategoryCard

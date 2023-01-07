@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import Card from '../components/molecules/Card';
+import Cards from '../components/organisms/Cards';
 import useContentful from '../hooks/useContentful';
 import styles from '../styles/Home.module.scss';
 
@@ -26,14 +26,7 @@ export default function Home(props) {
   
   return (
     <main className={styles[`home`]}>
-      {array ? <>
-          {array.map((item, index) => {
-            return (
-              <Card {...item.fields} key={index}/>
-            )
-          })}
-      </> : <p>loading</p>
-      }
+      {array ? <Cards series={array}/> : <p>loading</p>}
     </main>
   )
 }
