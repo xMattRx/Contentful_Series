@@ -10,12 +10,10 @@ export default function SeriePage(props) {
     return (
         <div className={styles[`serie`]}>
             <div className={styles[`content`]}>
-                <div className={styles[`backContainer`]}>
-                    <Link href={`/`}>
-                        <BsArrowLeftShort size={20}/>
-                        <p className={styles[`text`]}>BACK</p>
-                    </Link>
-                </div>
+                <Link className={styles[`backContainer`]} href={`/`}>
+                    <BsArrowLeftShort size={20}/>
+                    <p className={styles[`text`]}>BACK</p>
+                </Link>
                 <h1 className={styles[`title`]}>{props.title}</h1>
                 <p className={styles[`description`]}>{props.description}</p>
 
