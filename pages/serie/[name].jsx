@@ -1,14 +1,21 @@
 
+import Link from 'next/link.js'
 import React from 'react'
+import { BsArrowLeftShort } from 'react-icons/bs'
 import useContentful from '../../hooks/useContentful.js'
 import styles from './styles.module.scss'
-
 
 
 export default function SeriePage(props) {
     return (
         <div className={styles[`serie`]}>
             <div className={styles[`content`]}>
+                <div className={styles[`backContainer`]}>
+                    <Link href={`/`}>
+                        <BsArrowLeftShort size={20}/>
+                        <p className={styles[`text`]}>BACK</p>
+                    </Link>
+                </div>
                 <h1 className={styles[`title`]}>{props.title}</h1>
                 <p className={styles[`description`]}>{props.description}</p>
 
@@ -38,8 +45,6 @@ export async function getServerSideProps(context) {
         limit: 1,
         "fields.title": context.params.name,
     })
-    console.log('product:', product.items)
-    console.log(context.params)
     return {
         props: {
             ...product.items[0].fields
