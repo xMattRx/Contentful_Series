@@ -1,0 +1,15 @@
+.topicsContainer {
+    display: flex;
+    flex-direction: column;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+    @media screen and (max-width: 1024px) {}
+
+    @media screen and (max-width: 769px) {}
+
+    @media screen and (max-width: 426px) {
+        grid-template-columns: 1fr;
+    }
+
+}

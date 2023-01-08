@@ -1,0 +1,20 @@
+.title {
+    color: #391400;
+    cursor: default;
+    font-size: 72px;
+    font-weight: 800;
+    letter-spacing: -2px;
+    margin-bottom: 22px;
+    text-align: center;
+
+    @media screen and (max-width: 769px) {
+        font-size: 56px;
+        font-weight: 800;
+        line-height: 64px;
+    }
+
+    @media screen and (max-width: 426px) {
+        margin-bottom: 26px;
+        text-align: left;
+    }
+}

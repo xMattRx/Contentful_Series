@@ -1,0 +1,20 @@
+.topic {
+    align-items: flex-start;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 45px;
+
+    @media screen and (max-width: 769px) {}
+
+    @media screen and (max-width: 426px) {
+        flex-direction: column;
+    }
+
+    &:last-child {
+        @media screen and (max-width: 769px) {}
+
+        @media screen and (max-width: 426px) {
+            margin-bottom: 70px;
+        }
+    }
+}
