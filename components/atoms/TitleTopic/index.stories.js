@@ -1,8 +1,8 @@
-import TitleCard from ".";
+import TitleTopic from ".";
 
 export default {
-    title: "Atoms/TitleCard",
-    component: TitleCard,
+    title: "Atoms/TitleTopic",
+    component: TitleTopic,
     args: {
         name: "Dark"
     },
