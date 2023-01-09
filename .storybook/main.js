@@ -1,5 +1,4 @@
 const path = require("path");
-// const JsConfigPathsPlugin = require("jsconfig-paths-webpack-plugin");
 
 module.exports = {
   stories: [
@@ -12,6 +11,7 @@ module.exports = {
     "@storybook/addon-essentials",
     "@storybook/addon-interactions",
     "@storybook/addon-a11y",
+    "@storybook/preset-scss"
   ],
   features: {
     storyStoreV7: true,
@@ -22,17 +22,6 @@ module.exports = {
   },
 
   webpackFinal: async (config, { configType }) => {
-    config.module.rules.push({
-      test: /\.scss$/,
-      use: ["style-loader", "css-loader", "sass-loader"],
-      include: path.resolve(__dirname, "../"),
-    });
-    // config.resolve.plugins = config.resolve.plugins || [];
-    // config.resolve.plugins.push(
-    //   new JsConfigPathsPlugin({
-    //     configFile: path.resolve(__dirname, "../jsconfig.json"),
-    //   })
-    // );
     config.resolve.alias = {
       ...config.resolve.alias,
       "@": path.resolve(__dirname, "../src"),
@@ -41,6 +30,7 @@ module.exports = {
       "@molecules": path.resolve(__dirname, "../components/molecules/"),
       "@organisms": path.resolve(__dirname, "../components/organisms/"),
     };
+    
     return config;
   },
 };
