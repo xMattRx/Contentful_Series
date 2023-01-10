@@ -1,8 +1,8 @@
-import SerieContent from ".";
+import Topics from ".";
 
 export default {
-    title: "Organisms/SerieContent",
-    component: SerieContent,
+    title: "Organisms/Topics",
+    component: Topics,
     args: {
         title: "Breaking Bad",
         category: "Crime Drama",

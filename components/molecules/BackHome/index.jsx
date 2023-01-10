@@ -3,7 +3,7 @@ import React from 'react'
 import { BsArrowLeftShort } from 'react-icons/bs'
 import styles from './styles.module.scss'
 
-export function BackHome() {
+export default function BackHome() {
   return (
       <div className={styles[`backContainer`]}>
         <Link href={`/`}>

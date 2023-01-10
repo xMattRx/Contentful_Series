@@ -1,8 +1,8 @@
 import React from 'react'
 import DescriptionPost from '../../atoms/DescriptionPost'
 import TitlePost from '../../atoms/TitlePost'
-import { BackHome } from '../../molecules/BackHome'
-import { Topics } from '../Topics'
+import BackHome from '../../molecules/BackHome'
+import Topics from '../Topics'
 import styles from './styles.module.scss'
 
 export default function SerieContent({title, description, category, seasons, year}) {
