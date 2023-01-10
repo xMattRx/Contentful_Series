@@ -7,6 +7,7 @@ import styles from './styles.module.scss'
 
 
 export default function SeriePage(props) {
+    console.log(props)
     return (
         <div className={styles[`serie`]}>
             <SerieContent title={props.title} description={props.description} category={props.category} seasons={props.seasons} year={props.year} />
