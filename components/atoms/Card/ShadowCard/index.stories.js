@@ -1,7 +1,7 @@
 import ShadowCard from ".";
 
 export default {
-    title: "Atoms/ShadowCard",
+    title: "Atoms/Card/ShadowCard",
     component: ShadowCard,
 };
 

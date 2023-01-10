@@ -1,7 +1,7 @@
 import TitlePost from ".";
 
 export default {
-    title: "Atoms/TitlePost",
+    title: "Atoms/Post/TitlePost",
     component: TitlePost,
     args: {
         name: "Dark"

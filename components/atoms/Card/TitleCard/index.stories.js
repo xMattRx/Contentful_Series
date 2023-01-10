@@ -1,7 +1,7 @@
 import TitleCard from ".";
 
 export default {
-    title: "Atoms/TitleCard",
+    title: "Atoms/Card/TitleCard",
     component: TitleCard,
     args: {
         name: "Dark"

@@ -1,7 +1,7 @@
 import CategoryTopic from ".";
 
 export default {
-    title: "atoms/CategoryTopic",
+    title: "atoms/Topic/CategoryTopic",
     component: CategoryTopic,
     args: {
         type: "Drama Crime"

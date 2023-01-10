@@ -1,6 +1,6 @@
 
 import React from 'react'
-import ImagePost from '../../components/atoms/ImagePost/index.jsx'
+import ImagePost from '../../components/atoms/Post/ImagePost/index.jsx'
 import SerieContent from '../../components/organisms/SerieContent/index.jsx'
 import useContentful from '../../hooks/useContentful.js'
 import styles from './styles.module.scss'

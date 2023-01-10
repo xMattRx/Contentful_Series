@@ -1,7 +1,7 @@
 import CategoryCard from ".";
 
 export default {
-    title: "atoms/CategoryCard",
+    title: "atoms/Card/CategoryCard",
     component: CategoryCard,
     args: {
         type: "Drama Crime"

@@ -1,7 +1,7 @@
 import TitleTopic from ".";
 
 export default {
-    title: "Atoms/TitleTopic",
+    title: "Atoms/Topic/TitleTopic",
     component: TitleTopic,
     args: {
         name: "Dark"

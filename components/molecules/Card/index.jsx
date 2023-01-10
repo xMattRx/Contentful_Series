@@ -1,9 +1,9 @@
 import { RevealWrapper } from 'next-reveal'
 import Link from 'next/link'
 import React from 'react'
-import CategoryCard from '../../atoms/CategoryCard'
-import ShadowCard from '../../atoms/ShadowCard'
-import TitleCard from '../../atoms/TitleCard'
+import CategoryCard from '../../atoms/Card/CategoryCard'
+import ShadowCard from '../../atoms/Card/ShadowCard'
+import TitleCard from '../../atoms/Card/TitleCard'
 import styles from './styles.module.scss'
 
 export default function Card(props) {
