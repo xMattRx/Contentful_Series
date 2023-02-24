@@ -11,6 +11,8 @@
     "build-storybook": "build-storybook"
   },
   "dependencies": {
+    "@contentful/rich-text-react-renderer": "^15.16.2",
+    "@contentful/rich-text-types": "^16.0.2",
     "@next/font": "13.1.1",
     "@storybook/addon-postcss": "^2.0.0",
     "babel-preset-es2015": "^6.24.1",

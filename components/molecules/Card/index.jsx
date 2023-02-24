@@ -7,13 +7,12 @@ import TitleCard from '../../atoms/Card/TitleCard'
 import styles from './styles.module.scss'
 
 export default function Card(props) {
-
   return (
-        <Link href={`/serie/${props.title}`}>
+        <Link href={`/serie/${props.slug}`}>
           <RevealWrapper className="load-hidden" rotate={{x: 2,y:40,z:0}} origin='bottom' delay={200} duration={2000} distance='100px' reset={false} viewOffset={{top: 25, right:0, bottom: 10, left:5}}>
-            <div style={{background: `url(${props.verticalImage})`} } className={styles[`Container`]}>
+            <div style={{background: `url(${props.imageVertical.fields.file.url})`} } className={styles[`Container`]}>
               <ShadowCard/>
-              <CategoryCard type={props.category}/>
+              <CategoryCard type={props.category2.fields.name}/>
               <TitleCard name={props.title}/>
             </div>
           </RevealWrapper>

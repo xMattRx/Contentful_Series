@@ -7,11 +7,10 @@ import styles from './styles.module.scss'
 
 
 export default function SeriePage(props) {
-    console.log(props)
     return (
         <div className={styles[`serie`]}>
-            <SerieContent title={props.title} description={props.description} category={props.category} seasons={props.seasons} year={props.year} />
-            <ImagePost src={props.image} alt={props.title}/>
+            <SerieContent title={props.title} description={props.description2} category={props.category2.fields.name} seasons={props.seasons} year={props.year} />
+            <ImagePost src={props.imageHorizontal.fields.file.url} alt={props.title}/>
         </div>
     )
 }
@@ -20,7 +19,7 @@ export async function getServerSideProps(context) {
     const product = await useContentful.getEntries({
         content_type: 'serie',
         limit: 1,
-        "fields.title": context.params.name,
+        "fields.slug": `${context.params.name}`,
     })
     return {
         props: {

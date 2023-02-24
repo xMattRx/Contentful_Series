@@ -22,6 +22,7 @@ export default function Home(props) {
 
   useEffect(() => {
     setArray(sortData())
+    
   }, [])
   
   return (
@@ -32,8 +33,7 @@ export default function Home(props) {
 }
 
 export async function getStaticProps() {
-  const product = await useContentful.getEntries()
-
+  const product = await useContentful.getEntries({content_type: 'serie'})
   return {
       props: {
           ...product.items
