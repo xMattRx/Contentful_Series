@@ -5,7 +5,7 @@ export default function App({ Component, pageProps }) {
   return (
     <>
       <Head>
-        <title>My Next.js App</title>
+        <title>Contentful Series</title>
       </Head>
       <Component {...pageProps} />
     </>
