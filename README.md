@@ -1,37 +1,92 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# 🎬 Contentful Series
 
-## Getting Started
+**Contentful Series** é uma aplicação front-end que exibe uma galeria de séries utilizando dados dinâmicos vindos do CMS **Contentful**. O projeto foi desenvolvido com **Next.js**, **React** e **SCSS**, com foco em componentização, organização visual e consumo eficiente de conteúdo externo.
 
-First, run the development server:
+---
 
-```bash
-npm run dev
-# or
-yarn dev
-```
+## 🧪 Tecnologias utilizadas
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+- [Next.js](https://nextjs.org/)
+- [React](https://reactjs.org/)
+- [TypeScript](https://www.typescriptlang.org/) *(opcional, dependendo da versão final)*
+- [SCSS (Sass)](https://sass-lang.com/)
+- [Contentful CMS](https://www.contentful.com/)
 
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
+---
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
+## 📸 Preview
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+![Preview](./public/preview.png)  
+> *Exibição dinâmica de séries e categorias como Breaking Bad, Arcane, Avatar, etc.*
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+---
 
-## Learn More
+## 🚀 Como rodar o projeto localmente
 
-To learn more about Next.js, take a look at the following resources:
+1. Clone o repositório:
+   ```bash
+   git clone https://github.com/xMattRx/Contentful_Series.git
+   ```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+2. Acesse a pasta do projeto:
+   ```bash
+   cd Contentful_Series
+   ```
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+3. Instale as dependências:
+   ```bash
+   npm install
+   ```
 
-## Deploy on Vercel
+4. Configure as variáveis de ambiente:
+   Crie um arquivo `.env.local` com suas chaves do Contentful:
+   ```
+   NEXT_PUBLIC_CONTENTFUL_SPACE_ID=SEU_SPACE_ID
+   NEXT_PUBLIC_CONTENTFUL_ACCESS_TOKEN=SEU_ACCESS_TOKEN
+   ```
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+5. Execute o projeto:
+   ```bash
+   npm run dev
+   ```
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
-"# Contentful_Series" 
+6. Acesse no navegador:
+   ```
+   http://localhost:3000
+   ```
+
+---
+
+## 🎯 Funcionalidades
+
+- 🔄 Integração com Contentful para listar e categorizar séries
+- 🧩 Componentes reutilizáveis com Next.js e React
+- 🎨 Visual limpo e responsivo
+- 🏷️ Exibição de categoria por card
+- ⚙️ Estrutura preparada para escalabilidade
+
+---
+
+## 🧠 Possibilidades futuras
+
+- Filtro por gênero ou ano
+- Página individual para cada série
+- Busca por nome ou categoria
+- Dark mode
+
+---
+
+## 🌐 Deploy
+
+Acesse a aplicação em produção:  
+🔗 [contentful-series-one.vercel.app](https://contentful-series-one.vercel.app)
+
+---
+
+## 📄 Licença
+
+Este projeto está licenciado sob a licença MIT.
+
+---
+
+Desenvolvido por [xMattRx](https://github.com/xMattRx) 💡
